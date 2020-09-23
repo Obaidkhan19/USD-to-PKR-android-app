@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="349dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="11dp"
+        android:text="@string/elcome_to_currency_converter"
+        android:textColor="#F4511E"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dollarbox"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="412dp"
+        android:background="#9E9A89"
+        android:ems="10"
+        android:hint="Enter Ammount is USD"
+        android:inputType="textPersonName"
+        android:paddingLeft="95px"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#5E35B1"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="197dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="32dp"
+        android:background="#FDD835"
+        android:onClick="clickbtn"
+        android:text="@string/get_pkr_ammount_now"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#E53935"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/dollarbox"
+        app:layout_constraintTop_toBottomOf="@+id/dollarbox" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="324dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/dollarbox"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/pkr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
